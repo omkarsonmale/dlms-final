@@ -1,0 +1,332 @@
+.parent1 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    /* gap: 38px; */
+    position: relative;
+    top: 35px;
+    padding-bottom: 25px;
+    overflow-x: hidden;
+}
+
+.child {
+    box-sizing: border-box;
+    display: flex;
+    
+    justify-content: space-around;
+    flex-direction: row;
+    /* gap: 80px; */
+    position: relative;
+    top: 45px;
+    padding-bottom: 15px;
+
+}
+
+
+
+
+
+/* .title{
+    font-size: 100px;
+
+
+} */
+#ti {
+    justify-content: center;
+    font-size: 20px;
+}
+
+#text {
+    font-size: 20px;
+}
+
+/* #button{
+    font-size: 15px;
+    position: relative;
+    left: 50%;
+} */
+#title {
+    font-size: 20px;
+}
+
+#p {
+    font-size: 15px;
+}
+
+#buut {
+    font-style: solid;
+    color: black;
+    background-color: blue;
+
+
+}
+
+#but {
+    font-size: 15px;
+
+
+}
+
+#title2 {
+    justify-content: center;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+}
+
+#p2 {
+    font-size: 15px;
+    position: relative;
+    top: 20px;
+}
+
+#but2 {
+    font-size: 15px;
+    position: relative;
+    top: 20px;
+}
+
+#title3 {
+    justify-content: center;
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+}
+
+#p3 {
+    font-size: 15px;
+    position: relative;
+    top: 25px;
+}
+
+#but3 {
+    font-size: 15px;
+    position: relative;
+    top: 35px;
+}
+
+@media all and (max-width:1315px) {
+    #but3 {
+        top: 30px;
+    }
+}
+
+@media all and (max-width:1280px) {
+    #but3 {
+        top: 25px;
+    }
+}
+
+#title5 {
+    font-size: 20px;
+    /* position: relative;
+    top: 10px; */
+}
+
+#p5 {
+    font-size: 15px;
+    /* position: relative;
+    top: 25px; */
+}
+
+#but5 {
+    font-size: 15px;
+    /* position: relative;
+    top: 25px; */
+}
+
+#title6 {
+    font-size: 20px;
+    /* position: relative;
+    bottom: 15px; */
+}
+
+#p6 {
+    font-size: 15px;
+}
+
+#but6 {
+    font-size: 15px;
+    position: relative;
+    top: 3px;
+}
+
+#title7 {
+    font-size: 20px;
+    /* position: relative;
+    top: 10px; */
+}
+
+#p7 {
+    font-size: 15px;
+    /* position: relative;
+    top: 25px; */
+}
+
+#but7 {
+    font-size: 15px;
+    /* position: relative;
+    top: 25px; */
+}
+
+#title8 {
+    font: bold;
+    font-size: 17px;
+    /* position: relative;
+    top: 10px; */
+}
+
+#p8 {
+    font-size: 15px;
+    /* position: relative;
+    top: 25px; */
+}
+
+#but8 {
+    font-size: 15px;
+    /* position: relative;
+    top: 25px; */
+}
+
+@media(max-width:1056px) {
+    .parent1 {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:1056px) {
+    .child {
+        flex-wrap: wrap;
+    }
+}
+
+#boat {
+    font-style: solid;
+    size: 60px;
+
+}
+
+.omkii {
+    font-size: 15px;
+    color: white;
+}
+#butflutter{
+    position: relative;
+    top: 25px;
+}
+@media(max-width:1056px){
+    #butflutter{
+        position: relative;
+        top: 20px;
+    }
+}
+/* #buttonexp {
+
+    font-size: 2rem;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 200px;
+    right: 250px;
+} */
+#cardsbtn{
+    font-size: 2rem;
+    padding: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-right: 10px;
+}
+#cardsbtn11{
+    font-size: 2rem;
+    padding: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-right: 10px;
+}
+#cardsbtn2{
+    position: relative;
+    top: 24px;
+    font-size: 2rem;
+    padding: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-right: 10px;
+}
+#cardsbtn3{
+    position: relative;
+    top: 33px;
+    font-size: 2rem;
+    padding: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-right: 10px;
+}
+#cardsbtn4{
+    position: relative;
+    top: 13px;
+    font-size: 2rem;
+    padding: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-right: 10px;
+}
+#cardsbtn5{
+    position: relative;
+    top: 6px;
+    font-size: 2rem;
+    padding: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-right: 10px;
+}
+#p5{
+    position: relative;
+    top: 4px;
+}
+#title7{
+    position: relative;
+    top: 5px;
+}
+#p7{
+    position: relative;
+    top: 3px;
+}
+#cardsbtn6{
+    position: relative;
+    top: 13px;
+    font-size: 2rem;
+    padding: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-right: 10px;
+}
+#cardsbtn7{
+    position: relative;
+    top: 18px;
+    font-size: 2rem;
+    padding: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-right: 10px;
+}
+@media (max-width:1173px){
+    #cardsbtn{
+        position: relative;
+        top: 15px;
+        font-size: 2rem;
+        padding: 5px;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px; 
+        padding-right: 10px;
+    }
+}

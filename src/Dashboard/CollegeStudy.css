@@ -1,0 +1,64 @@
+.omkson {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    /* gap: 70px; */
+    position: relative;
+    top: 35px;
+}
+
+.omksonmale2 {
+    display: flex;
+    justify-content: space-around;
+    /* gap: 70px; */
+    position: relative;
+    top: 90px;
+    padding-bottom: 15px;
+
+}
+
+#dsat {
+    font-size: 20px;
+}
+
+#dsap {
+    font-size: 15px;
+}
+
+#dsaa {
+    font-size: 15px;
+}
+
+@media(max-width:1056px) {
+    .omkson {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:1056px) {
+    .omksonmale2 {
+        flex-wrap: wrap;
+    }
+}
+
+.omkii {
+    color: white;
+}
+#cardsbtncoll{
+    font-size: 2rem;
+    padding: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-right: 10px;
+}
+#cardsbtncol2{
+    position: relative;
+    top: 22px;
+    font-size: 2rem;
+    padding: 5px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-right: 10px;
+}

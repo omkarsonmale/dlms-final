@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.parent{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 60px;
+    padding: 6%;
+   padding-bottom: 15%;
+}
+.card-title{
+    justify-content: center;
+}
+.title{
+    position: relative;
+    left: 58px;
+    top: -7px;
+}
+@media(max-width:1056px){
+    .parent{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:360px){
+    .img{
+      
+        margin-top: 0;
+        width: 300px;
+       
+    }
+    .title{
+        font-size: 20px;
+    }
+}
+.team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    width: 50%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: #08080e;
+    padding: 15px;
+    border-bottom: 4px solid #A555EC;
+    border-radius: 20px;
+}
+.image1{
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #555;
+}
+
+.container1{
+    width: 200px;
+
+}
+
+.container1 p{
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+
+}
+
+.imp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.container1 p{
+    font-size: 2rem;
+}
+

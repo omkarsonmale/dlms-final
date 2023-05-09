@@ -1,0 +1,162 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  /* background-color: rgba(59, 130, 246, 0.5); */
+  /*background-color: #6674CC;*/
+}
+
+.home-logo {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  padding-left: 40px;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  position: relative;
+  top: 0.3rem;
+}
+
+.home-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 108px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.burger {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 72px;
+  background-color: transparent;
+  border: 0;
+  margin-top: 10px;
+  visibility: visible;
+}
+
+.navbar1 {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 20px 24px 0;
+  translate: -100% 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition-property: translate, opacity, visibility;
+  transition-duration: 0.5s;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons button {
+  font-family: 'Secular One', sans-serif;
+  font-size: 1.3rem;
+  padding: 20px;
+  color: black;
+  ;
+}
+
+.buttons button {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-family: inherit;
+  background: transparent;
+  cursor: pointer;
+  border: 0;
+}
+
+.buttons button:hover {
+  background-color: #077ad1;
+  color: white;
+}
+
+header.open .navbar1 {
+  opacity: 1;
+  visibility: visible;
+  translate: 0 0;
+}
+
+.logoOut {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  visibility: visible;
+  padding: 20px;
+  padding-left: 40px;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+@media (width >=500px) {
+  .navbar1 {
+    translate: 0 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+    height: 72px;
+    padding: 0 0 0 72px;
+  }
+
+  .logoOut {
+    visibility: hidden;
+    padding: 0;
+    padding-left: 0;
+    font-size: 0;
+    font-weight: 0;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-right: 40px;
+  }
+
+  .buttons button {
+    padding: 10px;
+    color: black;
+  }
+
+  .burger {
+    visibility: hidden;
+  }
+}
+
+@media (width >=600px) {
+  .navbar1 {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+
+@media (width >=500px) {
+  .home-logo {
+    margin-bottom: 0;
+  }
+}
+
+.logoutBut {
+  background-color: transparent;
+  border: 0;
+  color: black;
+  cursor: pointer;
+}

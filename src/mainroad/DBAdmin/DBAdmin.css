@@ -1,0 +1,291 @@
+/* .dbadmin {
+    overflow-x: hidden;
+} */
+
+@media (max-width:1280px) {
+    .roadmap {
+        position: relative;
+        top: 20px;
+        right: 100px;
+    }
+}
+
+
+#frontimg {
+    height: 835px;
+    width: 1000px;
+    position: absolute;
+    left: 20%;
+    top: 15%;
+}
+
+@media all and (max-width:1250px) {
+    #frontimg {
+        height: 735px;
+        width: 900px;
+    }
+}
+
+@media(max-width:1126px) {
+    #frontimg {
+        height: 690px;
+        width: 800px;
+    }
+}
+
+@media(max-width:999px) {
+    #frontimg {
+        height: 690px;
+        width: 700px;
+    }
+}
+
+@media(max-width:895px) {
+    #frontimg {
+        align-items: center;
+    }
+}
+
+@media(max-width:878px) {
+    #frontimg {
+        position: relative;
+        right: 20%;
+    }
+}
+
+#proje {
+    position: absolute;
+    top: 40%;
+}
+
+#list {
+    width: 650px;
+    font-size: 20px;
+    position: relative;
+    left: 28%;
+    top: 20px;
+
+}
+
+#devlope {
+    height: 200px;
+}
+
+#card {
+    width: 500px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.main-container {
+    padding: 30px;
+}
+
+/* HEADING */
+
+.heading {
+    text-align: center;
+}
+
+.heading__title {
+    font-weight: 600;
+}
+
+.heading__credits {
+    margin: 10px 0px;
+    color: #888888;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+
+.heading__link {
+    text-decoration: none;
+}
+
+.heading__credits .heading__link {
+    color: inherit;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+.card__link,
+.card__exit,
+.card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+}
+
+.card__link:hover::after {
+    width: 100%;
+}
+
+.card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+}
+
+.card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+}
+
+.card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.card__apply {
+    grid-row: 4/5;
+    align-self: center;
+}
+
+/* CARD BACKGROUNDS */
+
+.card-1 {
+    background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2 {
+    background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card-3 {
+    background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4 {
+    background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.card-5 {
+    background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1600px) {
+    .cards {
+        justify-content: center;
+    }
+}
+
+#projectsid {
+    position: relative;
+    top: 850px;
+    gap: 10px;
+}
+
+@media(max-width:1700px) {
+    #projectsid {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+#leftcard {
+    position: relative;
+    left: 100px;
+    width: 600px;
+}
+
+#rightcard {
+    position: relative;
+    right: 100px;
+    width: 600px;
+}
+
+#projeheading {
+    position: relative;
+    top: 880px;
+    width: 1400px;
+    left: 9%;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    font-style: solid;
+    color: rgb(25, 89, 216);
+}
+
+@media(max-width:1510px) {
+    #projeheading {
+        width: 1200px;
+
+    }
+
+}
+
+@media(max-width:1200px) {
+    #projeheading {
+        width: 1010px;
+
+    }
+
+}
+
+@media(max-width:1133px) {
+    #projeheading {
+        width: 950px;
+
+    }
+
+}
+
+@media(max-width:1098px) {
+    #projeheading {
+        width: 850px;
+
+    }
+
+}
+
+#tteext {
+    position: relative;
+    top: 70%;
+    font-size: 20px;
+}

@@ -1,0 +1,12 @@
+export const host = "https://dlms-server.onrender.com";
+export const regRoute = `${host}/api/auth/register`;
+export const logRoute = `${host}/api/auth/login`;
+export const changePassRoute = `${host}/api/auth/changepassword`;
+export const otpRoute = `${host}/api/auth/mail`;
+export const userRoute = `${host}/api/auth/users/`;
+export const userRoute2 = `${host}/api/auth/user/`;
+export const getMsgRoute = `${host}/api/con/`;
+export const postConRoute = `${host}/api/con/`;
+export const getCurrMsgRoute = `${host}/api/msg/`;
+export const postNewMsgRoute = `${host}/api/msg/`;
+export const setAvatarRoute = `${host}/api/auth/setAvatar`;

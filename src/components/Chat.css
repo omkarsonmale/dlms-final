@@ -1,0 +1,440 @@
+.messenger{
+    height: 75vh;
+    display: flex;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #FFEEEE;
+}
+.chatMenu{
+  padding: 10px;
+    flex: 2;
+}
+.chatBox{
+  padding: 10px;
+    flex: 6;
+}
+.chatBoxBottom{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: none;
+}
+.messageInputContainer{
+  flex : 100%;
+}
+.buttonFriendSearch{
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: #FE74A0;
+    color: white;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.chatMenuBox{
+    height: 100%;
+    overflow-y: auto;
+}
+.buttonFriendSearch:hover{
+    background-color: #fc5086;
+}
+.chatMessageInput{
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #FFEEEE;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.chatMessageInput:focus{
+    background-color: #d1c7c7;
+    color: black;
+    outline: none;
+}
+.chatMessageInput::placeholder{
+  color: #131324;
+  position: relative;
+  left: 0;
+  color: rgb(167, 163, 163);
+}
+.chatSubmitButton{
+    width: 50px;
+    height: 40px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    background-color: rgb(89, 137, 89);
+    color:white;
+    margin-right: 20px;
+}
+.chatSubmitButton:hover{
+    background-color: teal;
+}
+.chatMenuWrapper,.chatBoxWrapper{
+    padding: 10px;
+    height: 100%;
+}
+.chatMenuWrapper{
+  background-color: white;
+  border-radius: 15px;
+}
+.chatBoxWrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+}
+.chatBoxTop{
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+.chatMenuInput{
+    width: 90%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1.5px solid grey;
+
+}
+.conversation{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.conversation:hover{
+    background-color: rgb(213, 213, 213);
+}
+.conversationImage{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.conversationName{
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.messageTop{
+    display: flex;
+    flex-direction: row;
+}
+.messageImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.messageText{
+  font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #FFEEEE;
+    max-width: 300px;
+}
+.messageBottom{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.message.own{
+    align-items: flex-end;
+}
+.message.own .messageText{
+    background-color: #673065;
+    color: white;
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  
+  .overlay.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  .modal1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    padding: 0 16px;
+    background: white;
+    translate: 100% 0;
+    transition: 0.3s;
+  }
+  .modal1.open {
+    translate: 0;
+  }
+  .model1Box{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal1Container{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 100%;
+  }
+  .modal1ContainerInput{
+    flex: 80%;
+  }
+  .model1Input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 1.5rem;
+  }
+  .modal1ContainerButton{
+    flex: 20%;
+  }
+  .modal1Button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: rgb(131, 131, 243);
+    color:white;
+  }
+  .modal1Button:hover{
+    background-color: rgb(56, 56, 241);
+  }
+  .modal1FriendList{
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    overflow-y: auto;
+  }
+  .modal1FriendListImg{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .modal1FriendListName{
+    font-size: 2rem;
+    margin-right: 100px;
+  }
+  .modal1FriendListBut{
+    background-color: rgb(16, 162, 162);
+    border: none;
+    height: 100%;
+    padding: 4px;
+    width: 70px;
+    border-radius: 5px;
+  }
+  .modal1FriendListBut:hover{
+    background-color: teal;
+  }
+  .FriendListImg{
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (width <= 500px){
+    .chatBox,.chatMenu{
+      padding: 3px;
+    }
+    .messenger{
+      overflow: hidden;
+    }
+    .chatMenuBox{
+      height: 90%;
+    }
+    .conversationImage{
+      margin-right: 5px;
+      height: 25px;
+      width: 25px;
+    }
+    .messageText{
+      max-width: 200px;
+      font-size: 1rem;
+    }
+    .modal1 {
+      width: 250px;
+    }
+    .model1Box{
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .modal1Container{
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      width: 100%;
+    }
+    .modal1ContainerInput{
+      flex: 80%;
+    }
+    .model1Input{
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid black;
+      font-size: 1.4rem;
+    }
+    .modal1ContainerButton{
+      flex: 20%;
+    }
+    .modal1Button{
+      width: 100%;
+      height: 100%;
+      border: none;
+      font-size: 1rem;
+      padding-right: 5px;
+      padding-left: 5px;
+      cursor: pointer;
+      background-color: rgb(131, 131, 243);
+      color:white;
+    }
+    .modal1Button:hover{
+      background-color: rgb(56, 56, 241);
+    }
+    .modal1FriendList{
+      display: flex;
+      flex-direction: row;
+      padding:10px;
+      overflow-y: auto;
+    }
+    .modal1FriendListImg{
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+      margin-left: 0;
+    }
+    .FriendListImg{
+      height: 20px;
+      width: 20px;
+    }
+    .modal1FriendListName{
+      font-size: 1.5rem;
+      margin-right: 15px;
+    }
+    .modal1FriendListBut{
+      background-color: rgb(16, 162, 162);
+      border: none;
+      height: 100%;
+      padding: 4px;
+      width: 50px;
+      border-radius: 5px;
+    }
+    .modal1FriendListBut:hover{
+      background-color: teal;
+    }
+    .chatSubmitButton{
+      margin-right: 0;
+      width: 55px;
+    }
+  }
+
+  .container-avatar{
+    height: 100vh;
+    background-color: #131324;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.title-avatar{
+    color: white;
+}
+.avatars{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.selected{
+    border: 10px solid #9A0680;
+    padding: 0.5rem;
+    border-radius: 5.2rem;
+    transition: 0.5s ease-in-out;
+}
+.setProfilebtn{
+    background-color: #9A0680;
+    color: white;
+    border: 0;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.setProfilebtn:hover{
+    background-color: #79018C;
+}
+.loader {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border: 4px solid #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animloader 2s ease-in-out infinite;
+  }
+  .loader::after {
+    border-color: #FF3D00;
+    animation-delay: 1s;
+  }
+  
+  @keyframes animloader {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+      

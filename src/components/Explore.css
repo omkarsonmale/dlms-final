@@ -1,0 +1,305 @@
+.container {
+    margin-top: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15%;
+    padding-top: 12%;
+    padding-bottom: 0;
+    gap: 100px;
+}
+
+h1 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+h3 {
+    padding-top: 18px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+#button {
+    position: relative;
+    top: 50px;
+    font-size: 2rem;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 200px;
+    right: 250px;
+}
+
+.explore {
+    /* border-width: 0px; */
+    position: relative;
+    font-size: 2ch;
+
+    padding: 8px 20px;
+    /* margin: 40px 50px; */
+}
+
+.explore div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.explore:hover,
+.nav1:hover {
+    background-color: #4a59c0;
+    color: white;
+}
+
+.nav1 {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.content h1 {
+    font-size: 4.1rem;
+}
+
+section {
+    /* width: 65%; */
+    float: left;
+}
+
+aside {
+    width: 35%;
+    float: left;
+}
+
+.responsive {
+
+    max-width: 100%;
+    left: 60%;
+    top: 45%;
+    margin: auto;
+}
+
+.image {
+    width: 500px;
+}
+
+@media all and (max-width: 700px) {
+    #button {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        top: 0;
+        right: 0;
+    }
+
+    .nav1 {
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    .explore div {
+        padding: 0;
+    }
+
+    .container,
+    .content,
+    .responsive {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-items: center;
+        object-fit: cover;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .container {
+        gap: 10px;
+    }
+}
+
+
+
+@media all and (max-width: 1280px) {
+    #button {
+        position: relative;
+        left: 0rem;
+        top: 1rem;
+    }
+
+    .p {
+        left: 2rem;
+    }
+}
+
+
+@media all and (max-width: 1700px) {
+    #button {
+        position: relative;
+        left: 0rem;
+        top: 1rem;
+    }
+
+    .p {
+        left: 2rem;
+    }
+}
+
+
+
+
+
+
+
+/* Motivation css */
+.motiv-container {
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 0;
+    flex-wrap: wrap;
+}
+
+hr {
+    border: 0;
+    margin: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 8px solid rgb(51, 129, 232) !important;
+    opacity: 1 !important;
+    width: 700px;
+}
+
+.motiv-container h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.motiv-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    padding: 5%;
+}
+
+.feat {
+    padding: 50px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.motiv-head {
+    padding: 5px;
+    padding-bottom: 0;
+    background-color: transparent;
+    border-top: 4px solid rgb(51, 129, 232);
+    border-bottom: 4px solid rgb(51, 129, 232);
+}
+
+#team1 {
+    padding: 20px;
+}
+
+.p {
+    font-size: 2rem;
+    position: relative;
+    right: 100px;
+    top: 1%;
+}
+
+.p2 {
+    padding: 50px;
+    font-size: 20px;
+}
+
+.home-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+@media (width <=700px) {
+    .home-main {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image {
+        width: 200px;
+    }
+
+    .motiv-container {
+        display: flex;
+        width: auto;
+        text-align: center;
+        margin: auto;
+        align-content: center;
+    }
+
+    .motiv-content {
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    hr {
+        border-bottom: 8px solid #6674CC !important;
+        width: 250px;
+    }
+
+    h1,
+    h2 {
+        font-size: small;
+    }
+
+    .p2 {
+        padding: 4px;
+        padding-top: 20px;
+        font-size: 1.3rem;
+    }
+
+    .p {
+        top: 10px;
+        padding: 0;
+        right: 0;
+        font-size: 1.3rem;
+    }
+}
+
+#span {
+    font-weight: bold;
+}
+
+.imp {
+    gap: 50px;
+}
